@@ -33,7 +33,7 @@ target_include_directories(terminalgui-core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(terminalgui-core PUBLIC Qt${QT_VERSION_MAJOR}::Core)
 
 set_target_properties(terminalgui-core
-  PROPERTIES PUBLIC_HEADER "tgterminal.h tgcolor.h tgcommand.h tgkey.h")
+  PROPERTIES PUBLIC_HEADER "tgterminal.h;tgcolor.h;tgcommand.h;tgkey.h")
 
 install(TARGETS terminalgui-core
   #CONFIGURATIONS Release
